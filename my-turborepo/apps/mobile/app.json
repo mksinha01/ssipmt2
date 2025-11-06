@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Civic Voice Mobile",
+    "slug": "civic-voice-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.civicvoice.mobile"
+    },
+    "android": {
+      "package": "com.civicvoice.mobile"
+    }
+  }
+}

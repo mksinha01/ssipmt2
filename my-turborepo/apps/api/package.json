@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
+    "dev": "tsx watch --env-file=.env src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
     "lint": "eslint src --max-warnings 0",
@@ -12,19 +12,21 @@
     "test": "jest"
   },
   "dependencies": {
-    "@repo/shared-types": "*",
-    "@repo/services-reporting": "*",
+    "@hono/node-server": "^1.19.6",
+    "@hono/zod-validator": "^0.2.0",
     "@repo/services-agent": "*",
     "@repo/services-knowledge": "*",
+    "@repo/services-reporting": "*",
+    "@repo/shared-types": "*",
+    "dotenv": "^17.2.3",
     "hono": "^4.6.0",
-    "zod": "^3.23.0",
-    "@hono/zod-validator": "^0.2.0"
+    "zod": "^3.23.0"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
-    "@types/node": "^22.15.3",
     "@types/jest": "^29.5.0",
+    "@types/node": "^22.15.3",
     "@types/supertest": "^6.0.0",
     "eslint": "^9.34.0",
     "jest": "^29.7.0",
